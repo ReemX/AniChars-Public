@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.dark .leaflet-layer,
+html.dark .leaflet-control-zoom-in,
+html.dark .leaflet-control-zoom-out,
+html.dark .leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+.leaflet-popup-close-button {
+  display: none;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  border: 0.2rem solid #4338ca;
+  background-color: #e0e7ff;
+  translate: -0.05rem;
+}
+
+html.dark .leaflet-popup-content-wrapper,
+html.dark .leaflet-popup-tip {
+  border: 0.2rem solid #1d4ed8;
+  background-color: #1f2937;
+}
+
+.leaflet-popup-content {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #4338ca;
+  font-family: "Nova Square", sans-serif;
+  margin: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  translate: 0 0.15rem;
+}
+
+html.dark .leaflet-popup-content {
+  color: #9ca3af;
+}
+
+.leaflet-container {
+  background: #e0e7ff;
+}
+
+html.dark .leaflet-container {
+  background: #1f2937;
+}
